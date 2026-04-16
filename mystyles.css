@@ -1,0 +1,208 @@
+/* IMPORT FUN FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:wght@300;400;600&display=swap');
+
+/* ROOT COLOR VARIABLES */
+:root {
+    --yellow: #FFF689;
+    --gold: #F4D35E;
+
+    --peach: #FFB88A;
+    --orange: #FF9C5B;
+    --burnt: #F67B45;
+
+    --pink-light: #FBC2C2;
+    --pink-mid: #E39B99;
+    --pink-dark: #CB7876;
+
+    --green-light: #B4CFA4;
+    --green-mid: #8BA47C;
+    --green-dark: #62866C;
+
+    --blue-light: #A0C5E3;
+    --blue-mid: #81B2D9;
+    --blue-dark: #32769B;
+
+    --purple-light: #BBA6DD;
+    --purple-mid: #8C7DA8;
+    --purple-dark: #64557B;
+
+    --text-dark: #1E2136;
+}
+
+/* BODY BACKGROUND (SCRAPBOOK FEEL) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--pink-light), var(--blue-light), var(--green-light));
+    background-attachment: fixed;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 20px;
+}
+
+/* MAIN CONTAINER (LIKE A JOURNAL PAGE) */
+.page-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+
+    /* layered scrapbook shadow */
+    box-shadow: 
+        10px 10px 0 var(--pink-mid),
+        20px 20px 0 var(--blue-mid),
+        30px 30px 0 var(--green-mid);
+}
+
+/* TITLE */
+h1 {
+    font-family: 'Handlee', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--purple-dark);
+    margin-bottom: 10px;
+    transform: rotate(-2deg);
+}
+
+/* LINKS */
+a {
+    color: var(--blue-dark);
+    text-decoration: none;
+    font-weight: 600;
+    background: var(--yellow);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+a:hover {
+    background: var(--orange);
+    color: white;
+}
+
+/* LIST STYLING */
+ul {
+    list-style-type: "✿ ";
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+
+    /* soft card effect */
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* MAKE SUBLIST TEXT SMALLER */
+ul ul, ol ul {
+    font-size: 0.9rem;
+    color: var(--purple-dark);
+}
+
+/* IMAGES (POLAROID STYLE) */
+img {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+
+    /* polaroid shadow */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+
+    transform: rotate(-2deg);
+    transition: transform 0.2s ease;
+}
+
+/* RANDOM ROTATION VARIATION */
+img:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+/* HOVER EFFECT FOR FUN */
+img:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+/* SECTION SPACING */
+br {
+    line-height: 2;
+}
+
+/* BACK TO TOP LINK */
+a[href="#top"] {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    background: var(--green-mid);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* new stuff */
+/* SECTION CONTAINER */
+.media-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FBC2C2;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* TITLE STYLE */
+.section-title {
+    font-family: 'Handlee', cursive;
+    color: #64557B;
+    margin-bottom: 15px;
+}
+
+/* VIDEO WRAPPER */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* VIDEO STYLING */
+.video-wrapper iframe {
+    width: 315px;
+    height: 560px;
+    border-radius: 15px;
+    border: 8px solid #A0C5E3;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+}
+
+/* EXTRA TEXT STYLE (helps meet requirements) */
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #1E2136;
+}
+
+
+/* .map-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #B4CFA4;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-family: 'Handlee', cursive;
+    color: #32769B;
+}
+
+.tableau-map {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+} */
